@@ -39,6 +39,7 @@ npm run start
 ```shell
 cnpm run build
 npm run build
+cp -r build/* public
 ```
 # 多版本
 
