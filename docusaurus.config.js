@@ -59,7 +59,7 @@ module.exports = {
         //   position: 'right',
         // },
         {
-          href: 'https://git.yunqiic.org.cn/Yunqiic/pumpkin',
+          href: 'https://git.yunqiic.com/Yunqiic/pumpkin',
           label: '托管平台',
           position: 'right',
         },
@@ -94,7 +94,7 @@ module.exports = {
           items: [
             {
               label: '云启智城',
-              href: 'https://www.yunqiic.org.cn/',
+              href: 'https://www.yunqiic.com/',
             },
           ],
         },

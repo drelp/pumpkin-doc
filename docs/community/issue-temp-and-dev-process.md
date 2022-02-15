@@ -50,7 +50,7 @@ sidebar_position: 3
 - 从Yunqiic/pumpkin的repo上fork一个分支到您自己的repo来开始工作，并设置upstream为Yunqiic/pumpkin的repo。
 
 ```shell
-git remote add upstream https://git.yunqiic.org.cn/Yunqiic/pumpkin.git
+git remote add upstream https://git.yunqiic.com/Yunqiic/pumpkin.git
 ```
 
 **2. 选择issue**

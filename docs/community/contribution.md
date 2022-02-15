@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 开源贡献指南
+# 代码贡献指南
 
 欢迎使用云启智城Pumpkin！本文档作为基本指南来为您指引如何向 Pumpkin进行贡献。如果您发现文档中有错误或缺失的内容，请向我们联系。
 
@@ -47,9 +47,9 @@ sidebar_position: 2
 
 ### 创建 Issue / PR 
 
-我们使用 [Issues](https://git.yunqiic.org.cn/Yunqiic/pumpkin/issues) 以及 [Pull Requests](https://git.yunqiic.org.cn/Yunqiic/pumpkin/pulls) 来管理/追踪问题。
+我们使用 [Issues](https://git.yunqiic.com/Yunqiic/pumpkin/issues) 以及 [Pull Requests](https://git.yunqiic.com/Yunqiic/pumpkin/pulls) 来管理/追踪问题。
 
-如果您发现了文档中有表述错误，或者代码发现了 BUG，或者希望开发新的特性，或者希望提建议，可以[创建一个 Issue](https://git.yunqiic.org.cn/Yunqiic/pumpkin/issues/new)。请参考 Issue 模板中对应的指导信息来完善 Issue 的内容，来帮助我们更好地理解您的 Issue。
+如果您发现了文档中有表述错误，或者代码发现了 BUG，或者希望开发新的特性，或者希望提建议，可以[创建一个 Issue](https://git.yunqiic.com/Yunqiic/pumpkin/issues/new)。请参考 Issue 模板中对应的指导信息来完善 Issue 的内容，来帮助我们更好地理解您的 Issue。
 
 如果您想要贡献代码，您可以参考上面的 [云启智城工作流](#工作流)，提交对应的 PR。若是对当前开发版本进行提交，则目标分支为 `master`。如果您的 PR 包含非常大的变更，比如模块的重构或者添加新的组件，请**务必先提出相关 issue，发起详细讨论，达成一致后再进行变更**，并为其编写详细的文档来阐述其设计、解决的问题和用途。注意一个 PR 尽量不要过于大。如果的确需要有大的变更，可以将其按功能拆分成多个单独的 PR。
 

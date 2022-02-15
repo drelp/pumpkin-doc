@@ -28,7 +28,7 @@ Helm v3.5.4 安装可参加 Helm 官网[安装教程](https://helm.sh/docs/intro
 从南瓜系统项目地址下载源码包解压，如下：
 
 ```console
-wget https://git.yunqiic.org.cn/Yunqiic/pumpkin/archive/release-v4.0.0.tar.gz
+wget https://git.yunqiic.com/Yunqiic/pumpkin/archive/release-v4.0.0.tar.gz
 tar -zxvf pumpkin-release-v4.0.0.tar.gz
 cd pumpkin/
 ```

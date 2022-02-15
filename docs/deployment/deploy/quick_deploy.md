@@ -53,7 +53,7 @@ kubectl label node {nodeName} pumpkin.yunqiic.pcl.cn/node=server
 ```console
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
-helm repo add ocharts https://git.yunqiic.org.cn/Yunqiic/pumpkin-charts/raw/branch/master
+helm repo add ocharts https://git.yunqiic.com/Yunqiic/pumpkin-charts/raw/branch/master
 ```
 添加成功后同步仓库信息，如下：
 ```console

@@ -31,7 +31,7 @@ Pumpkin 使用 Kubernetes 集群来做整个平台的统一管理，是必不可
 下载方式如下：
 
 ```shell
-wget https://pumpkin.yunqiic.org.cn/install/k8s_install.zip
+wget https://pumpkin.yunqiic.com/install/k8s_install.zip
 unzip k8s_install.zip
 cd single_master_k8s_install
 ```
@@ -55,7 +55,7 @@ cd single_master_k8s_install
 
 ```shell
 cd /root
-wget https://pumpkin.yunqiic.org.cn/install/k8s_install.zip
+wget https://pumpkin.yunqiic.com/install/k8s_install.zip
 unzip k8s_install.zip
 cd single_master_k8s_install
 ```
@@ -556,14 +556,14 @@ spec:
 1. 下载yaml文件
 
 ```shell
-wget https://git.yunqiic.org.cn/Yunqiic/pumpkin/src/tag/v4.0.5/deploy/single_master_k8s_install/juicefs_csi_driver.yaml	
+wget https://git.yunqiic.com/Yunqiic/pumpkin/src/tag/v4.0.5/deploy/single_master_k8s_install/juicefs_csi_driver.yaml	
 #k8s v1.18及以上
 ```
 
 或者
 
 ```shell
-wget https://git.yunqiic.org.cn/Yunqiic/pumpkin/src/tag/v4.0.5/deploy/single_master_k8s_install/juicefs_csi_driver_before_v1_18.yaml #k8s v1.18以下
+wget https://git.yunqiic.com/Yunqiic/pumpkin/src/tag/v4.0.5/deploy/single_master_k8s_install/juicefs_csi_driver_before_v1_18.yaml #k8s v1.18以下
 ```
 
 2. 安装驱动

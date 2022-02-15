@@ -40,7 +40,7 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <div className="container">
-          <h2 className={styles.middleTitle}>针对研发及教育的开源计算平台</h2>
+          <h2 className={styles.middleTitle}>针对研发及教育的计算平台</h2>
           <div className="row">
             <div className={clsx(`col`, 'text--center')}>
               <div  className={styles.card}>
