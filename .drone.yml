@@ -1,0 +1,47 @@
+kind: pipeline
+name: pumpkin-doc
+type: kubernetes
+platform:
+  os: linux
+  arch: amd64
+trigger:
+  event:
+    - push
+  branch:
+    - master    
+volumes:
+  - name: docker
+    host:
+      path: /var/run/
+  - name: kube
+    host:
+      path: /root/.kube
+steps:
+  - name: 构建镜像
+    image: yiluxiangbei/yunqiicpumpkin/docker:20.10.6-make
+    volumes:
+      - name: docker
+        path: /var/run/
+    environment:
+      DOCKER_HUB_HOST:
+        from_secret: docker_hub_host
+      DOCKER_HUB_USERNAME:
+        from_secret: docker_hub_userame
+      DOCKER_HUB_PASSWD:
+        from_secret: docker_hub_passwd
+      DOCKER_HUB_PROJECT:
+        from_secret: docker_hub_project
+    commands:
+      - docker build --no-cache -t pumpkin-doc:latest -f ./dockerfile .
+      - (echo $DOCKER_HUB_PASSWD | docker login $DOCKER_HUB_HOST -u $DOCKER_HUB_USERNAME --password-stdin) 1>/dev/null 2>&1
+      - docker tag pumpkin-doc:latest $DOCKER_HUB_HOST/$DOCKER_HUB_PROJECT/pumpkin-doc:latest
+      - docker push $DOCKER_HUB_HOST/$DOCKER_HUB_PROJECT/pumpkin-doc:latest
+
+  - name: 部署镜像
+    image: istio/kubectl:1.5.10
+    volumes:
+      - name: kube
+        path: /root/.kube
+        readOnly: true
+    commands:
+      - kubectl delete -f deploy.yaml && kubectl apply -f deploy.yaml

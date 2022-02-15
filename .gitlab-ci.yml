@@ -1,0 +1,22 @@
+stages:
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+pages:
+  stage: deploy
+  tags: 
+  - runner-tag
+  script:
+  - npm install --registry=https://registry.npm.taobao.org
+  - npm run build
+  - rm -rf ./public
+  - mv ./build ./public
+  - cp -r ./install ./public/install
+  artifacts:
+    paths:
+    - public
+  only:
+    - master

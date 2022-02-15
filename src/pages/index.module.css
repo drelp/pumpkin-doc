@@ -1,0 +1,105 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ .header_{
+  background-color: linear-gradient(
+    #9cd6e8,#fff
+  );
+}
+.headerRow {
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle {
+  padding-top: 25%;
+  font-family: "MicrosoftYaHei-Bold ";
+  font-size: 36px;
+  line-height: 43.2px;
+ 
+  text-align: left;
+}
+
+.headerText {
+  width: 418.36px;
+  font-size: 14px;
+  line-height: 16.8px;
+  height: 71.6px;
+  font-family: "MicrosoftYaHeiLight ";
+  text-align: left;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+
+.headerButton {
+  background-color: #000;
+  align-items: center;
+  border-radius: 25.12px;
+  justify-content: center;
+  max-width:150px;
+  min-width: 100px
+ 
+}
+.headerButton>a:hover{text-decoration:none}
+.headerButtonText {
+  font-family: "MicrosoftYaHeiLight ";
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: left;
+  color: #fff;
+  line-height: 40px;
+  margin-left: 14%;
+}
+
+.headerImg {
+  margin: 10px 0;
+  height:300px
+}  
+
+.middleTitle {
+  font-family: "MicrosoftYaHei-Bold";
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 3% ;
+}
+.main {
+  margin: 0 auto;
+  padding: 2% 0;
+}
+
+.mainTitle {
+  font-family: "MicrosoftYaHei-Bold";
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+  margin-top: 5%;
+ 
+}
+
+.mainImg {
+  height: 180px;
+  text-align: center;
+}
+.mainText {
+  height: auto;
+  font-family: "MicrosoftYaHeiLight ";
+  font-size: 14px;
+  line-height: 21.6px;
+  text-align: left ;
+  opacity: 0.7;
+}
+.detailImg{height: 25px;position: relative;top:7px;left:5%;}
+.card {
+  background-color: var(--ifm-card-background-color);
+  border-radius: var(--ifm-card-border-radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 400px;
+  padding: 15px;
+}

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pumpkin-doc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pumpkin-doc
+  template:
+    metadata:
+      labels:
+        app: pumpkin-doc
+    spec:
+      containers:
+        - name: pumpkin-doc
+          image: yiluxiangbei/yunqiicpumpkin/pumpkin-doc:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+
